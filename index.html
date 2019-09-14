@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+	body{
+		overflow: hidden;
+		background-image: url("img/bg.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.home{
+		display: none;
+		overflow: auto;
+		position: fixed;
+		z-index: 1;/*sit on top*/
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 100, 150, 0.2);
+		opacity: 0.0;
+
+	}
+	.game_over{
+		display: none;
+		overflow: auto;
+		position: fixed;
+		z-index: 1;/*sit on top*/
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.0;
+	}
+	.mcontent{
+		background-color: transparent;
+		margin: 15% auto;/*From top and centered*/
+		padding: 20px;
+	}
+	.close{
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.close:hover, .close:focus{
+		color:black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	#playbtn, #playagainbtn{
+		border: none;
+		width: 150px;
+		height: 80px;
+		background-color: #3D3DC2;
+		font-family: "Mv boli";
+		font-size: 25px;
+		color: whitesmoke;
+		display: block;
+		padding: 10px;
+		margin: auto;
+	}
+	#about{
+		border: none;
+		width: 150px;
+		height: 80px;
+		background-color: #45BABA;
+		font-family: "Mv boli";
+		font-size: 25px;
+		color: whitesmoke;
+		display: block;
+		padding: 10px;
+		margin: auto;
+	}
+	canvas{
+		background-color: rgba(0, 0, 0, 0.0);
+
+	}
+	.over{
+		color: #E41B1B; 
+		padding: 50px;
+		font-family: "mv boli"; 
+		font-size: 60px;
+		width: 30%;
+		height: 50px;
+		margin-left: 35%;
+	}
+</style>
+</head>
+<body>
+	<div id="home"class="home">
+		<div class="mcontent">
+			<button id="playbtn">Play</button>
+			<br>
+			<button id="about">About</button>
+		</div>
+	</div>
+	<div id="game_over"class="game_over">
+		<div class="mcontent">
+			<span class="over">
+			Game over </span><br>
+			<button id="playagainbtn">Play-Again</button>
+			<br>
+		</div>
+	</div>
+	<canvas id="can"></canvas>
+	<script src="js/engine.js"type="text/javascript"></script>
+
+</body>
+</html>
