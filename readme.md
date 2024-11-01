@@ -1,4 +1,4 @@
-# Snake game web-based game
+# Snake web-based 2D game
 
   <img src="https://github.com/emantggw/snake_game_js/raw/main/assets/screenshots/screenshot.gif" />
 
